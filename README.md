@@ -50,5 +50,7 @@ container neo4j_test will be stopped,
 ## 定时备份
 
 ```bash
-0 3 * * 7 python docker_neo4j_backup.py backup <container_name> <backup_dir> -f
+0 3 * * 7 python3 docker_neo4j_backup.py backup <container_name> <backup_dir> -f
 ```
+
+> 注意python3应该替换为合适的解释器
